@@ -47,6 +47,15 @@ body{margin:0;font-family:Manrope,system-ui,-apple-system,Segoe UI,sans-serif;ba
 @media(max-width:1080px){.menu-toggle{display:flex}.nav{display:none;position:fixed;top:76px;right:18px;left:auto;transform:none;width:min(310px,calc(100vw - 36px));border-radius:24px;padding:12px;background:rgba(255,255,255,.94);flex-direction:column;align-items:stretch;gap:4px}.nav.open{display:flex}.nav a{font-size:13px;padding:12px 14px}.finale-wrap,.contact-grid{grid-template-columns:1fr}.finale-card{min-height:420px;padding:36px}.memory-hero .big{font-size:42px!important}.sales-argument{grid-template-columns:1fr}.matrix-card{grid-template-columns:1fr}.matrix-card .moment{min-height:110px}.metric-row{grid-template-columns:1fr}.proof-grid,.why-grid{grid-template-columns:1fr}}
 @media(max-width:640px){.deck{width:min(100% - 32px,1360px)}.slide{padding:58px 0}.hero h1{font-size:52px}.memory-hero .big{font-size:34px!important}.finale-line{font-size:40px}.contact-card{padding:26px}.contact-card h3{font-size:25px}.contact-card a{font-size:16px}.brand-logo{max-width:76vw}.g3,.g5{grid-template-columns:1fr}}
 
+
+/* footer internal note */
+.footer-meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 28px;border-top:1px solid var(--line);padding-top:24px}
+.footer-block strong{display:block;color:#526174;font-size:12px;font-weight:850;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
+.footer-block span{display:block;color:#748398;font-size:12px;line-height:1.65}
+.footer-wide{grid-column:1/-1;max-width:980px}
+.footer-copyright{grid-column:1/-1;color:#748398;font-size:12px;line-height:1.6;padding-top:6px}
+@media(max-width:640px){.footer-meta{grid-template-columns:1fr;gap:16px}.footer{padding:34px 0 48px}}
+
 </style>
 </head>
 <body>
@@ -94,7 +103,23 @@ body{margin:0;font-family:Manrope,system-ui,-apple-system,Segoe UI,sans-serif;ba
 
 
 <section class="slide compact contact-section" id="contact"><div style="width:100%"><div class="eyebrow">Thông tin liên hệ</div><h2>Liên hệ tư vấn giải pháp World Cup 2026.</h2><div class="contact-grid"><div class="contact-card"><div class="contact-kicker">Tư vấn sản phẩm</div><h3>Branding & Martech Solution</h3><a href="mailto:branding_solution@admicro.vn">branding_solution@admicro.vn</a><a href="mailto:tiencaocam@admiro.vn">tiencaocam@admiro.vn</a></div><div class="contact-card"><div class="contact-kicker">Tư vấn Lập kế hoạch & Creative</div><h3>admeX Creative Media Agency</h3><a href="mailto:cuongtranhung@vccorp.vn">cuongtranhung@vccorp.vn</a><a href="mailto:anhnguyenhoangduy@vccorp.vn">anhnguyenhoangduy@vccorp.vn</a></div></div></div></section>
-<footer class="footer"><div class="deck"><div class="source">Nguồn dữ kiện giải đấu: FIFA World Cup 2026 official match information. Proposal này dùng để hỗ trợ Sales/Quản lý Kinh doanh giải thích sản phẩm và giải pháp Premium Meta Content Adnetwork của ADMICRO.</div></div></footer>
+<footer class="footer"><div class="deck"><div class="source">
+  <div class="footer-meta">
+    <div class="footer-block">
+      <strong>Nguồn dữ liệu tham chiếu</strong>
+      <span>VTV | 01.06.2026 – 18.06.2026</span>
+    </div>
+    <div class="footer-block">
+      <strong>Lưu hành nội bộ</strong>
+      <span>Dành cho đội ngũ Sales &amp; Business Development</span>
+    </div>
+    <div class="footer-block footer-wide">
+      <strong>Phát triển &amp; kiểm soát nội dung</strong>
+      <span>Landing Page được phát triển với sự hỗ trợ của Trí tuệ Nhân tạo (AI) dưới sự hoạch định, biên tập nội dung và kiểm soát chất lượng bởi admeX Creative Media Agency và Branding &amp; Martech Solution.</span>
+    </div>
+    <div class="footer-copyright">© 2026 admeX Creative Media Agency × ADMICRO · Emotion ConteXtive™ World Cup 2026 Sales Proposal</div>
+  </div>
+</div></div></footer>
 </main>
 
 <script>
