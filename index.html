@@ -64,6 +64,29 @@ body{margin:0;font-family:Manrope,system-ui,-apple-system,Segoe UI,sans-serif;ba
 .matrix-card .moment{position:relative;overflow:hidden;min-height:auto;padding:18px 20px;border-radius:22px;background:linear-gradient(135deg,#176bff 0%,#15b8e8 46%,#19b98f 100%);display:flex;flex-direction:column;justify-content:center}.matrix-card .moment:before{display:none!important}.matrix-card .moment:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 90% 0%,rgba(255,255,255,.20),transparent 42%);pointer-events:none}.heart-badge{display:none!important}.matrix-card .moment .heart-mark{position:absolute;right:16px;top:15px;z-index:1;width:30px;height:30px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.24);font-family:"Space Grotesk",Manrope,sans-serif;font-size:15px;font-weight:800;color:#fff;line-height:1}.matrix-card .moment span{position:relative;z-index:1;font-size:11px;text-transform:uppercase;letter-spacing:.16em;font-weight:900;opacity:.82;padding-right:42px}.matrix-card .moment b{position:relative;z-index:1;display:block;margin-top:6px;font-family:"Space Grotesk",Manrope,sans-serif;font-size:25px;line-height:1.02;letter-spacing:-.055em;text-transform:uppercase;color:#fff}.matrix-card .moment small{display:none!important}.matrix-card:nth-child(2) .moment{background:linear-gradient(135deg,#15a3e8 0%,#16c6d4 48%,#18b98c 100%)}.matrix-card:nth-child(3) .moment{background:linear-gradient(135deg,#128e6f 0%,#19b98f 50%,#6ad35c 100%)}.matrix-card:nth-child(4) .moment{background:linear-gradient(135deg,#f18d13 0%,#ffb547 55%,#ffd166 100%)}.matrix-card:nth-child(5) .moment{background:linear-gradient(135deg,#e83e72 0%,#ff647c 52%,#ff9ab0 100%)}
 @media(max-width:1080px){.matrix-card .moment{min-height:auto!important}.heart-rail{margin-bottom:18px;flex-wrap:wrap}}
 
+
+/* sales packaged resources */
+.resource-block{margin-top:26px;padding:30px;border-radius:34px;background:linear-gradient(135deg,#ffffff 0%,#f5fbff 52%,#fffaf0 100%);border:1px solid var(--line);box-shadow:var(--shadow)}
+.resource-head{display:flex;justify-content:space-between;gap:24px;align-items:flex-end;margin-bottom:22px}
+.resource-head h3{font-size:30px;margin:0;max-width:720px}.resource-head p{max-width:560px;font-size:15.5px;line-height:1.6}
+.resource-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.resource-card{position:relative;display:block;text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:24px;padding:20px 20px 18px;box-shadow:0 16px 42px rgba(20,32,51,.055);transition:transform .22s ease, box-shadow .22s ease, border-color .22s ease;overflow:hidden}
+.resource-card:before{content:"";position:absolute;left:0;top:0;right:0;height:4px;background:var(--grad);opacity:.9}
+.resource-card:hover{transform:translateY(-3px);box-shadow:0 22px 58px rgba(20,32,51,.10);border-color:rgba(23,107,255,.22)}
+.resource-card .rc-type{display:inline-flex;padding:7px 10px;border-radius:999px;background:#eef6ff;color:#176bff;font-size:11px;font-weight:900;letter-spacing:.10em;text-transform:uppercase;margin-bottom:16px}
+.resource-card b{display:block;color:var(--ink);font-size:20px;line-height:1.18;letter-spacing:-.035em;margin-bottom:8px}
+.resource-card span{display:block;color:#66778d;font-size:14.5px;line-height:1.48;margin-bottom:18px}
+.resource-card .rc-link{font-weight:900;color:var(--blue);font-size:14px}
+.resource-card.green:before{background:linear-gradient(90deg,#19b98f,#3bd873)}
+.resource-card.green .rc-type{background:#eefbf6;color:#08785b}
+.resource-card.bank:before{background:linear-gradient(90deg,#176bff,#15b8e8)}
+.resource-card.food:before{background:linear-gradient(90deg,#ff8a2a,#ffb547)}
+.resource-card.location:before{background:linear-gradient(90deg,#764cff,#176bff)}
+.resource-card.ooh:before{background:linear-gradient(90deg,#15b8e8,#19b98f)}
+.resource-card.video:before{background:linear-gradient(90deg,#ff647c,#ffb547)}
+@media(max-width:1080px){.resource-head{display:block}.resource-head p{margin-top:10px}.resource-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.resource-block{padding:22px}.resource-grid{grid-template-columns:1fr}.resource-head h3{font-size:25px}}
+
 </style>
 </head>
 <body>
@@ -103,7 +126,52 @@ body{margin:0;font-family:Manrope,system-ui,-apple-system,Segoe UI,sans-serif;ba
 
 <section class="slide"><div style="width:100%"><div class="eyebrow vn">Luận điểm Sales cần chào bán</div><h2>Đừng bán “gói World Cup”. Hãy bán một cách xuất hiện có chiến lược.</h2><p class="lead">Sales cần dẫn khách hàng đi qua 4 bước: thị trường có quy mô lớn hơn, hành vi tiêu thụ nội dung đa dạng hơn, cảm xúc người hâm mộ thay đổi theo từng khoảnh khắc, và ADMICRO giúp thương hiệu chọn đúng khoảnh khắc đó.</p><div class="sales-argument"><div class="arg-card"><div class="label">Fact 01</div><b>World Cup 2026 lớn hơn.</b><p>48 đội tuyển và 104 trận đấu tạo ra lượng nội dung, lịch xem và điểm chạm truyền thông lớn hơn.</p></div><div class="arg-card"><div class="label">Fact 02</div><b>Người dùng không chỉ xem trận đấu.</b><p>Họ theo dõi tin nóng, nhận định, highlight, hậu trường, bình luận, fan culture và tranh luận sau trận.</p></div><div class="arg-card"><div class="label">Interpretation</div><b>Vấn đề không còn là có xuất hiện hay không.</b><p>Vấn đề là xuất hiện ở khoảnh khắc nào, trong trạng thái cảm xúc nào, với thông điệp gì.</p></div><div class="arg-card"><div class="label">Sales Closing</div><b>ADMICRO bán logic xuất hiện.</b><p>Đúng nội dung, đúng cảm xúc, đúng ngành hàng và đúng thời điểm trong hệ sinh thái premium.</p></div></div></div></section>
 
-<section class="slide compact" id="s5"><div style="width:100%"><div class="eyebrow">Gợi ý đóng gói</div><h2>Gợi ý đóng gói bán hàng.</h2><div class="grid g3"><div class="card bigcard"><div class="tag">Starter</div><div class="offer">World Cup Context Pack</div><p style="margin-top:14px">Phù hợp thương hiệu cần hiện diện cạnh nội dung World Cup ở quy mô cơ bản.</p><div class="divider"></div><ul class="muted-list"><li>Contextual targeting theo cụm nội dung bóng đá</li><li>Display / native / article in-feed</li><li>Brand safety layer</li></ul></div><div class="card bigcard" style="background:linear-gradient(180deg,#ffffff,#eef8ff)"><div class="tag">Recommended</div><div class="offer">Emotion ConteXtive™ Pack</div><p style="margin-top:14px">Phù hợp thương hiệu muốn sở hữu một hoặc nhiều trạng thái cảm xúc cụ thể.</p><div class="divider"></div><ul class="muted-list"><li>Emotion moment mapping</li><li>Category message matching</li><li>Burst theo trận lớn & knockout</li><li>Premium publisher delivery</li></ul></div><div class="card bigcard"><div class="tag">Premium</div><div class="offer">World Cup Emotion Domination</div><p style="margin-top:14px">Phù hợp thương hiệu lớn cần một campaign territory xuyên suốt mùa giải.</p><div class="divider"></div><ul class="muted-list"><li>Always-on + emotion bursts</li><li>Custom content hub / landing</li><li>OOH / social amplification tùy chọn</li><li>Post-campaign insight report</li></ul></div></div></div></section>
+<section class="slide compact" id="s5"><div style="width:100%"><div class="eyebrow">Gợi ý đóng gói</div><h2>Gợi ý đóng gói bán hàng.</h2><div class="grid g3"><div class="card bigcard"><div class="tag">Starter</div><div class="offer">World Cup Context Pack</div><p style="margin-top:14px">Phù hợp thương hiệu cần hiện diện cạnh nội dung World Cup ở quy mô cơ bản.</p><div class="divider"></div><ul class="muted-list"><li>Contextual targeting theo cụm nội dung bóng đá</li><li>Display / native / article in-feed</li><li>Brand safety layer</li></ul></div><div class="card bigcard" style="background:linear-gradient(180deg,#ffffff,#eef8ff)"><div class="tag">Recommended</div><div class="offer">Emotion ConteXtive™ Pack</div><p style="margin-top:14px">Phù hợp thương hiệu muốn sở hữu một hoặc nhiều trạng thái cảm xúc cụ thể.</p><div class="divider"></div><ul class="muted-list"><li>Emotion moment mapping</li><li>Category message matching</li><li>Burst theo trận lớn & knockout</li><li>Premium publisher delivery</li></ul></div><div class="card bigcard"><div class="tag">Premium</div><div class="offer">World Cup Emotion Domination</div><p style="margin-top:14px">Phù hợp thương hiệu lớn cần một campaign territory xuyên suốt mùa giải.</p><div class="divider"></div><ul class="muted-list"><li>Always-on + emotion bursts</li><li>Custom content hub / landing</li><li>OOH / social amplification tùy chọn</li><li>Post-campaign insight report</li></ul></div></div>
+<div class="resource-block">
+  <div class="resource-head">
+    <h3>Các gói chào bán đã được đóng gói sẵn.</h3>
+    <p>Tham khảo nhanh các giải pháp đã được xây dựng cho từng nhóm khách hàng, mục tiêu truyền thông và định dạng triển khai trong mùa World Cup 2026.</p>
+  </div>
+  <div class="resource-grid">
+    <a class="resource-card green" href="https://admex-agency.github.io/worldcup-greensm" target="_blank" rel="noopener">
+      <div class="rc-type">F&amp;B Package</div>
+      <b>Gói chào bán Green SM Food</b>
+      <span>Giải pháp kích hoạt nhu cầu ăn uống, tụ họp và tiếp năng lượng mùa bóng đá.</span>
+      <div class="rc-link">Xem giải pháp →</div>
+    </a>
+    <a class="resource-card bank" href="https://admex-agency.github.io/worldcup-shb" target="_blank" rel="noopener">
+      <div class="rc-type">Banking Package</div>
+      <b>Gói chào bán SHB</b>
+      <span>Gợi ý khai thác cảm xúc kỳ vọng, vươn tầm và chiến thắng cho ngành tài chính.</span>
+      <div class="rc-link">Xem giải pháp →</div>
+    </a>
+    <a class="resource-card food" href="https://admex-agency.github.io/admex-yumangel" target="_blank" rel="noopener">
+      <div class="rc-type">Medicine Package</div>
+      <b>Gói chào bán Yumangel</b>
+      <span>Giải pháp branding mạnh mẽ về thay đổi thói quen ăn uống, ảnh hưởng dạ dày trong các khung giờ bóng đá.</span>
+      <div class="rc-link">Xem giải pháp →</div>
+    </a>
+    <a class="resource-card location" href="https://admex-agency.github.io/worldcup26-locationads" target="_blank" rel="noopener">
+      <div class="rc-type">Location Ads</div>
+      <b>Gói bán Location Ads</b>
+      <span>Giải pháp tiếp cận người dùng theo bối cảnh địa điểm, hành vi di chuyển và điểm tụ họp.</span>
+      <div class="rc-link">Xem giải pháp →</div>
+    </a>
+    <a class="resource-card ooh" href="https://admex-agency.github.io/digitalooh" target="_blank" rel="noopener">
+      <div class="rc-type">Rate Card</div>
+      <b>Báo giá Digital-OOH</b>
+      <span>Tham khảo hệ thống màn hình và định dạng Digital OOH phục vụ chiến dịch World Cup.</span>
+      <div class="rc-link">Xem báo giá →</div>
+    </a>
+    <a class="resource-card video" href="https://admex-agency.github.io/worldcup26/" target="_blank" rel="noopener">
+      <div class="rc-type">Rate Card</div>
+      <b>Báo giá Video Highlight</b>
+      <span>Gói hiện diện cùng nội dung highlight, bàn thắng và các khoảnh khắc nóng của giải đấu.</span>
+      <div class="rc-link">Xem báo giá →</div>
+    </a>
+  </div>
+</div>
+</div></section>
 
 
 <section class="slide" id="s6"><div style="width:100%"><div class="eyebrow">Sales cần nhớ</div><h2>Cuối cùng, Sales cần nhớ 5 điều khi đi chào khách hàng.</h2><div class="memory-grid"><div class="memory-hero"><div class="big">Không bán bóng đá.<br>Bán khoảnh khắc<br>cảm xúc.</div><p>World Cup là bối cảnh. Emotion ConteXtive™ là cách biến bối cảnh đó thành một logic truyền thông dễ hiểu, dễ bán và có khả năng gắn với mục tiêu từng ngành hàng.</p></div><div class="grid" style="gap:14px"><div class="memory-card"><strong><em>01</em>World Cup không chỉ là inventory.</strong><p>Đó là chuỗi cảm xúc liên tục trước trận, trong trận và sau trận.</p></div><div class="memory-card"><strong><em>02</em>Khách hàng không cần mua tất cả.</strong><p>Họ chỉ cần chọn emotion moment phù hợp nhất với vai trò thương hiệu.</p></div><div class="memory-card"><strong><em>03</em>Mỗi ngành hàng có một cảm xúc nên sở hữu.</strong><p>F&B có thể sở hữu Hào hứng/Kết nối. Ngân hàng có thể sở hữu Kỳ vọng/Vinh quang. Xe máy, năng lượng, trading có thể sở hữu Hồi hộp/Bứt phá.</p></div><div class="memory-card"><strong><em>04</em>ADMICRO có lợi thế contextual + publisher premium.</strong><p>Giải pháp giúp thương hiệu xuất hiện trong môi trường nội dung phù hợp, không chỉ chạy theo tệp người dùng.</p></div><div class="memory-card"><strong><em>05</em>Câu chốt bán hàng phải thật rõ.</strong><p><span class="highlight">“Đừng chỉ xuất hiện trong mùa World Cup. Hãy xuất hiện đúng khoảnh khắc cảm xúc mà thương hiệu có thể sở hữu.”</span></p></div></div></div><div class="card bigcard" style="margin-top:24px;background:linear-gradient(135deg,#ffffff,#f3f9ff)"><div class="sales-line">Key highlight: Emotion ConteXtive™ giúp thương hiệu chọn đúng nội dung, đúng cảm xúc, đúng thông điệp và đúng thời điểm trong hành trình World Cup 2026.</div></div></div></section>
